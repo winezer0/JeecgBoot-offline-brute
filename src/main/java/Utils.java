@@ -38,13 +38,6 @@ public class Utils {
      * @return 包含 username、password 和 salt 的用户数据列表
      * @throws IOException 如果文件读取失败
      */
-    /**
-     * 从 JSON 文件中加载用户数据
-     *
-     * @param jsonFilePath JSON 文件路径
-     * @return 包含 username、password 和 salt 的用户数据列表
-     * @throws IOException 如果文件读取失败
-     */
     public static List<Map<String, String>> loadUserDataFromJson(String jsonFilePath) throws IOException {
         ObjectMapper objectMapper = new ObjectMapper();
         Path path = Paths.get(jsonFilePath);
